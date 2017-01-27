@@ -18,4 +18,4 @@ Start it in console mode:
 
 Route the port of the Barrel docker image to host port (both on 7080):
 
-    $ docker run -p 7080:7080 barrel
+    $ docker run -p 7080:7080 -t barrel
