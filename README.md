@@ -23,3 +23,26 @@ Start it in console mode:
 Route the port of the Barrel docker image to host port (both on 7080):
 
     $ docker run -p 7080:7080 -t barrel
+
+## Usage
+
+Start as detached (background) process named *test-barrel*
+from the [Docker Hub image](https://hub.docker.com/r/barrel/barrel/):
+
+    $ docker run --detach --name=test-barrel barrel/barrel
+
+Display the log:
+
+    $ docker logs test-barrel
+
+Stop the container:
+
+    $ docker stop test-barrel
+
+Open a bash session in the container:
+
+    $ docker exec -it test-barrel bash
+
+Open a remote console with the Erlang VM:
+
+    $ docker exec -it test-barrel /barrel/bin/barrel remote_console
