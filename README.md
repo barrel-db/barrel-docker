@@ -6,6 +6,10 @@ From this directory:
     $ docker build -t barrel .
 
 
+## Push it to docker hub
+
+The procedure to push your barrel image to docker hub is [described here](https://docs.docker.com/engine/getstarted/step_six/).
+
 ## Run the barrel docker image
 
 By default, this will start a barrel database on port 7080:
