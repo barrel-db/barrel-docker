@@ -7,6 +7,7 @@ RUN mkdir /src
 RUN cd /src && git clone https://gitlab.com/barrel-db/barrel-platform.git
 
 RUN cd /src/barrel-platform && \
+    git checkout tags/0.8.0 && \
     make rel
 
 RUN cp -r /src/barrel-platform/_build/prod/rel/barrel /
